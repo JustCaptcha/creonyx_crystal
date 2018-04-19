@@ -1,10 +1,13 @@
 
 module State
   class Global
-    getter game_over : Bool = false
-    getter window = SF::RenderWindow.new(SF::VideoMode.new(800, 600), "Creonyx")
-    getter mainfont = SF::Font.from_file("./resources/fonts/nasalization/nasalization-rg.ttf")
+    getter game_over : Bool
+    getter window : SF::RenderWindow
+    getter mainfont : SF::Font
     def initialize
+      @game_over = false
+      @window = SF::RenderWindow.new(SF::VideoMode.new(800, 600), "Creonyx")
+      @mainfont = SF::Font.from_file("./resources/fonts/nasalization/nasalization-rg.ttf")
     end
 
     def end_game()

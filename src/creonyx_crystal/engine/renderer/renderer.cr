@@ -1,5 +1,11 @@
-module Render
-  class Render
+module Renderer
+  class Renderer
+    def initialize()
+
+    end
+    def run()
+
+    end
     def update()
       puts "Render update"
     end
